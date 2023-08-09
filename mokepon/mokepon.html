@@ -3,6 +3,7 @@
     <head> 
         <meta charset ="uft-8" />
         <title> MOKEPON !</title>
+        <script src="js/mokepon.js"></script> 
     </head>
     <body> 
         <H1> MOKEPON! 🔥💧🌱</H1>
@@ -10,9 +11,16 @@
         <section id="selecionar-mascota">  
             <h2> elige a tu mascota: </h2>
 
-            mascotas
+            <label for="Hipodoge">Hipodoge</label>
+            <input type="radio" name="mascota" id="Hipodoge"/>
+            
+            <label for="capipepo">capipepo</label>
+            <input type="radio" name="mascota" id="capipepo"/>
 
-            <button>seleccionar</button>
+            <label for="ratigueya">ratigueya</label>
+            <input type="radio" name="mascota" id="ratigueya"/>
+
+            <button id="boton-mascota"> seleccionar</button>
         </section>
         
         <section id="selecionar-ataque"> 
@@ -21,9 +29,9 @@
             <p>tu mascota tiene <span>3</span> vidas</p>
             <p>la mascota del enemigo tiene <span>3</span> vidas</p>
             <p> 
-                <button> fuego 🔥</button>
-                <button> agua 💧</button>
-                <button> tierra 🌱</button>
+                <button id="boton-fuego"></button> fuego 🔥</button>
+                <button id="boton-agua"></button> agua 💧</button>
+                <button id="boton-tierra"></button> tierra 🌱</button>
             </p>
         </section>
 
@@ -32,7 +40,7 @@
         </section>
 
         <section id="reiniciar">
-            <button>Reiniciar</button>
+            <button id="boton-reiniciar">Reiniciar</button>
         </section>
     </body>
  </html>
